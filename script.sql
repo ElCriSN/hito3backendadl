@@ -1,5 +1,5 @@
-CREATE DATABASE proyectofinalmodulo8adl;
-\c proyectofinalmodulo8adl
+CREATE DATABASE ecommerce;
+\c ecommerce
 
 CREATE TABLE users (
     id SERIAL,
@@ -48,6 +48,16 @@ CREATE TABLE productos (
     galeria VARCHAR,
     PRIMARY KEY (id)
 );
+
+INSERT INTO productos VALUES(
+    DEFAULT,
+    'Hola',
+    'Test',
+    '1564',
+    'prueba perros',
+    'https://placedog.net/500',
+    'https://placedog.net/500/g'
+)
 
 CREATE TABLE categoria_producto (
     id SERIAL,
